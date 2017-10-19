@@ -184,7 +184,7 @@ class GravityDelegate {
                     .findLastCompletelyVisibleItemPosition()
                     == layoutManager.getItemCount() - 1;
 
-            if (visibleWidth > 0.5f && !endOfList) {
+            if (visibleWidth > 0.2f && !endOfList) {
                 return child;
             } else if (snapLastItem && endOfList) {
                 return child;
@@ -232,7 +232,7 @@ class GravityDelegate {
             boolean startOfList = ((LinearLayoutManager) layoutManager)
                     .findFirstCompletelyVisibleItemPosition() == 0;
 
-            if (visibleWidth > 0.5f && !startOfList) {
+            if (visibleWidth > 0.2f && !startOfList) {
                 return child;
             } else if (snapLastItem && startOfList) {
                 return child;
