@@ -220,10 +220,10 @@ class GravityDelegate {
             float visibleWidth;
 
             if (isRtlHorizontal) {
-                visibleWidth = (float) helper.getDecoratedEnd(child)
+               visibleWidth = (float) (helper.getTotalSpace() - helper.getDecoratedStart(child))
                         / helper.getDecoratedMeasurement(child);
             } else {
-                visibleWidth = (float) (helper.getTotalSpace() - helper.getDecoratedStart(child))
+                 visibleWidth = (float) helper.getDecoratedEnd(child)
                         / helper.getDecoratedMeasurement(child);
             }
 
