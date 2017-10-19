@@ -184,7 +184,7 @@ class GravityDelegate {
                     .findLastCompletelyVisibleItemPosition()
                     == layoutManager.getItemCount() - 1;
 
-            if (visibleWidth > 0.2f && !endOfList) {
+            if (visibleWidth > 0.8f && !endOfList) {
                 return child;
             } else if (snapLastItem && endOfList) {
                 return child;
