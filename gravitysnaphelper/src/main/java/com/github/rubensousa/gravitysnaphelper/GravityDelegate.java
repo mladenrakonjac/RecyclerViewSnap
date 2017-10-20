@@ -205,7 +205,7 @@ class GravityDelegate {
 
         if (layoutManager instanceof LinearLayoutManager) {
             int lastChild = ((LinearLayoutManager) layoutManager).findLastVisibleItemPosition();
-            int offset = 1;
+            int offset = 2;
 
             if (layoutManager instanceof GridLayoutManager) {
                 offset += ((GridLayoutManager) layoutManager).getSpanCount() - 1;
